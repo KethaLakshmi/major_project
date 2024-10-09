@@ -1,0 +1,11 @@
+STUDENT PERFORMANCE TRACKER
+Prerequisties:
+flask,python,html,sqllite3,bootstrap
+In this project the flask library used for web application development.python is used for managing students database ,for database creation
+python sqllite3 library is used.
+functionalies:
+1.adding students
+2.adding grades according student's roll numbers
+3.deleting students according to roll numbers
+4.calculation of averages of each student
+5.viewing the students list and grades list 
