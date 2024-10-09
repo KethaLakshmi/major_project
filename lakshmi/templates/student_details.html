@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students List</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Students List</h1>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Roll Number</th>
+                    <th>Name</th>
+                    <th>class</th>
+                    <th>section</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in student_details %}
+                <tr>
+                    <td>{{ i[0] }}</td>
+                    <td>{{ i[1] }}</td>
+                    <td>{{ i[2] }}</td>
+                    <td>{{ i[3] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Roll Number</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                    <th>Marks</th>
+                    
+                </tr>
+            </thead>
+            <h1 class="text-center">Students Grades</h1>
+            <tbody>
+                {% for i in marks_details %}
+                <tr>
+                    <td>{{ i[0] }}</td>
+                    <td>{{ i[1] }}</td>
+                    <td>{{ i[2] }}</td>
+                    <td>{{ i[3] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/" class="btn btn-primary">Back to Home</a>
+        <a href="/delete_form" class="btn btn-primary btn-lg mt-3">Delete</a>
+        <a href="/average_form" class="btn btn-primary btn-lg mt-3">Average</a>
+
+        </div>
+</body>
+</html>
